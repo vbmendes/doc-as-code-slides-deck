@@ -13,7 +13,9 @@ jobs:
       with:
         docs-folder: "docs/"
         build-command: "make slides"
-    - uses: actions/upload-artifact@v1
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      #if: ${{ github.ref == 'refs/heads/main' }}
       with:
-        name: DocumentationHTML
-        path: docs/_build/slides/
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/_build/slides/
