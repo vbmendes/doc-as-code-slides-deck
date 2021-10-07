@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: Build and publish docs to GH Pages
+=======
+name: Pull Request Docs Check
+>>>>>>> 694ae3cbfb678eba49565a3d0ed1538d7e752237
 
 on: 
   push:
@@ -19,6 +23,7 @@ jobs:
       with:
         docs-folder: "docs/"
         build-command: "make slides"
+<<<<<<< HEAD
     - name: Git branch name
       id: git-branch-name
       uses: EthanSK/git-branch-name-action@v1
@@ -35,3 +40,11 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/_build/slides/
         destination_dir: ./${GIT_BRANCH_NAME}
+=======
+    - name: Deploy to Github Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: ${{ github.ref == 'refs/heads/main' }}
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/_build/slides/
+>>>>>>> 694ae3cbfb678eba49565a3d0ed1538d7e752237
