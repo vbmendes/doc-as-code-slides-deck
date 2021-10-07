@@ -8,14 +8,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@master
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Build Sphinx
+      uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
         build-command: "make slides"
-    - name: Deploy
+    - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v3
-      #if: ${{ github.ref == 'refs/heads/main' }}
+      if: ${{ github.ref == 'refs/heads/main' }}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/_build/slides/
