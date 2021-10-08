@@ -1,0 +1,44 @@
+name: Build and publish docs to GH Pages
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Build Sphinx
+      uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "docs/"
+        build-command: "make slides"
+    - name: Get branch name
+      id: branch-name
+      uses: tj-actions/branch-names@v5
+    - name: Deploy to Github Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: ${{ steps.branch-name.outputs.current_branch == 'main' }}
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/_build/slides/
+    - name: Deploy branch to Github Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: ${{ steps.branch-name.outputs.current_branch != 'main' }}
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/_build/slides/
+        destination_dir: ./${{steps.branch-name.outputs.current_branch}}/
+    - name: Create comment with link
+      uses: marocchino/sticky-pull-request-comment@v2
+      if: ${{ steps.branch-name.outputs.current_branch != 'main' }}
+      with:
+        message: |
+          The docs are available at <https://vbmendes.github.io/doc-as-code-slides-deck/${{steps.branch-name.outputs.current_branch}}/>
+    
