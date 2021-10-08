@@ -18,7 +18,7 @@ jobs:
       uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
-        build-command: "make slides"
+        build-command: "make clean_and_build"
     - name: Get branch name
       id: branch-name
       uses: tj-actions/branch-names@v5

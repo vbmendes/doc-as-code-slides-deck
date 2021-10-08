@@ -15,7 +15,9 @@ help:
 
 .PHONY: help Makefile
 
-serve: slides
+clean_and_build: clean slides
+
+serve: clean_and_build
 	python -m http.server ${PORT} -d "$(BUILDDIR)/slides"
 
 # Catch-all target: route all unknown targets to Sphinx using the new
