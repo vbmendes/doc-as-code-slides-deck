@@ -35,3 +35,10 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/_build/slides/
         destination_dir: ./${{steps.branch-name.outputs.current_branch}}/
+    - name: Create comment with link
+      uses: marocchino/sticky-pull-request-comment@v2
+      if: ${{ steps.branch-name.outputs.current_branch != 'main' }}
+      with:
+        message: |
+          The docs are available at <https://vbmendes.github.io/doc-as-code-slides-deck/${{steps.branch-name.outputs.current_branch}}/>
+    
