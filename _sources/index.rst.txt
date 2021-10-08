@@ -3,14 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. role:: emphasize
+
 A importância da documentação no trabalho distribuído
 =================================================================================
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Contents:
-
-
+Python Brasil [2021]
 
 Indices and tables
 ------------------
@@ -25,16 +23,22 @@ Indices and tables
 * Tradeo-offs 5min
 * Perguntas 5min
 
-Quem sou eu
------------
+.. rst-class:: text-and-picture
 
-* Vinicius Mendes
+Quem sou eu?
+------------
+
+* :emphasize:`Vinicius Mendes`
   
-    - 13 anos na área de TI
-    - Back-end Python Developer @ Loadsmart desde abr/21
+    - :emphasize:`13 anos` na área de TI
+    - Back-end Python Developer @ :emphasize:`Loadsmart` desde abr/21
     - Antes: 
 
         -  Solucione Sistemas
         -  Globo.com
         -  Dataprev
         -  Professor Substituto na UFRN
+    
+.. image:: _static/profile-picture.jpg
+    :width: 400
+    :alt: Minha foto com minha estação de trabalho ao fundo
