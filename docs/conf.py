@@ -60,9 +60,9 @@ html_static_path = ["_static"]
 
 
 # Options for Hieroglyph
-slide_theme = "vbmendes_theme"
-slide_theme_path = ["_themes"]
+slide_theme = "slides2"
 slide_theme_options = {
+    "custom_css": "vbmendes.css",
     "presenters": [
         {
             "name": "Vinicius Mendes",
