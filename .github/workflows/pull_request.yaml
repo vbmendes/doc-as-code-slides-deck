@@ -14,11 +14,13 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v1
+    - name: Clean
+      run: "cd docs; make clean"
     - name: Build Sphinx
       uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
-        build-command: "make clean_and_build"
+        build-command: "make slides"
     - name: Get branch name
       id: branch-name
       uses: tj-actions/branch-names@v5
