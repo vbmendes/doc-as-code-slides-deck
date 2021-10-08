@@ -15,7 +15,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Clean
-      run: "cd docs; make clean"
+      run: "mkdir -p docs/_build; rm -rf docs/_build/*"
     - name: Build Sphinx
       uses: ammaraskar/sphinx-action@master
       with:
