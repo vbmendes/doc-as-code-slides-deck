@@ -35,6 +35,8 @@ release = "2021.10.04"
 # ones.
 extensions = [
     "hieroglyph",
+    "sphinxcontrib.kroki",
+    "sphinxemoji.sphinxemoji",
 ]
 
 # Add any paths that contain templates here, relative to this directory.

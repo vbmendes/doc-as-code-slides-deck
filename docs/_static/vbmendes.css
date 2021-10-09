@@ -24,3 +24,11 @@
 a.image-reference {
     border-bottom: none;
 }
+
+.agile-manifesto {
+    background: url('agile-manifesto-background.jpg');
+}
+
+.lighten {
+    opacity: 0.5;
+}
