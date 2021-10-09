@@ -1,0 +1,230 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+--><!DOCTYPE html>
+
+
+<html>
+<head>
+  <title>A importância da documentação no trabalho distribuído &mdash; A importancia da documentacao no trabalho distribuido 2021.10.04 documentation</title>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="hieroglyph-title" data-config-title>
+  <meta name="hieroglyph-subtitle" data-config-subtitle>
+  <meta name="hieroglyph-presenter" data-config-presenter>
+
+  
+  <link rel="stylesheet" media="all"
+        href="_static/theme/css/default.css">
+  <link rel="stylesheet" media="all"
+        href="_static/theme/css/hieroglyph.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)"
+        href="_static/theme/css/phone.css">
+
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+  <link rel="stylesheet" href="_static/vbmendes.css"
+        type="text/css" />
+  
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2021.10.04',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+
+    <script data-main="_static/js/slides"
+            src="_static/js/require-1.0.8.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="A importancia da documentacao no trabalho distribuido 2021.10.04 documentation" href="#" /> 
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  
+
+  
+    <slide class="title-slide segue nobackground level-1" id="a-importancia-da-documentacao-no-trabalho-distribuido">
+    <hgroup>
+      <h1>A importância da documentação no trabalho distribuído</h1>
+    </hgroup>
+    <article class="">
+      <p>Python Brasil [2021]</p>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="agenda">
+    <hgroup>
+      <h2>Agenda</h2>
+    </hgroup>
+    <article class="">
+      <ul class="simple">
+<li>Quem sou eu 5min</li>
+<li>Processo de proposta de solução 5min</li>
+<li>Análise prévia 5min</li>
+<li>Documentação 5min</li>
+<li>Importância em equipes distribuídas 5min</li>
+<li>Exemplos 5min</li>
+<li>Sphinx 5min</li>
+<li>Tradeo-offs 5min</li>
+<li>Perguntas 5min</li>
+</ul>
+
+
+
+
+    </article>
+  </slide>  <slide class="text-and-picture level-2" id="quem-sou-eu">
+    <hgroup>
+      <h2>Quem sou eu?</h2>
+    </hgroup>
+    <article class="">
+      <ul>
+<li><p class="first"><span class="emphasize">Vinicius Mendes</span></p>
+<blockquote>
+<div><ul>
+<li><p class="first"><span class="emphasize">13 anos</span> na área de TI</p>
+</li>
+<li><p class="first">Back-end Python Developer &#64; <span class="emphasize">Loadsmart</span> desde abr/21</p>
+</li>
+<li><p class="first">Antes:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Solucione Sistemas</li>
+<li>Globo.com</li>
+<li>Dataprev</li>
+<li>Professor Substituto na UFRN</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/profile-picture.jpg"><img alt="Minha foto com minha estação de trabalho ao fundo" src="_images/profile-picture.jpg" style="width: 400px;" /></a>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="eu-na-comunidade-python">
+    <hgroup>
+      <h2>Eu na comunidade Python</h2>
+    </hgroup>
+    <article class="">
+      <ul class="simple">
+<li>Na lista <code class="code docutils literal notranslate"><span class="pre">django-brasil</span></code> desde 2008 e administrador desde 2011</li>
+<li>Python Brasil [5] em Caxias do Sul (2009)</li>
+<li>Python Brasil [8] no Rio de Janeiro (2012)</li>
+<li>Python Brasil [10] em Porto de Galinhas (2014)</li>
+<li>Python Brasil 2018 em Natal</li>
+<li>Python Brasil 2021 em 🏠</li>
+</ul>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="id1">
+    <hgroup>
+      <h2>Eu na comunidade Python</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/pythonbrasil-5.jpg"><img alt="Foto oficial da Python Brasil [5] em Caxias do Sul (2009)" class="align-center" src="_images/pythonbrasil-5.jpg" style="width: 800px;" /></a>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="id2">
+    <hgroup>
+      <h2>Eu na comunidade Python</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/pythonbrasil-8.jpg"><img alt="Foto oficial da Python Brasil [8] no Rio de Janeiro (2012)" class="align-center" src="_images/pythonbrasil-8.jpg" style="width: 650px;" /></a>
+
+
+
+
+    </article>
+  </slide>  <slide class="agile-manifesto level-2" id="manifesto-agil">
+    <hgroup>
+      <h2>Manifesto ágil</h2>
+    </hgroup>
+    <article class="">
+      <p>Estamos descobrindo maneiras melhores de desenvolver
+software, fazendo-o nós mesmos e ajudando outros a
+fazerem o mesmo. Através deste trabalho, passamos a valorizar:</p>
+<ul class="simple">
+<li><span class="emphasize">Indivíduos e interações</span> mais que processos e ferramentas</li>
+<li><span class="emphasize">Software em funcionamento</span> mais que documentação abrangente</li>
+<li><span class="emphasize">Colaboração com o cliente</span> mais que negociação de contratos</li>
+<li><span class="emphasize">Responder a mudanças</span> mais que seguir um plano</li>
+</ul>
+<p>Ou seja, mesmo havendo valor nos itens à direita,
+valorizamos mais os itens à esquerda.</p>
+
+
+
+
+    </article>
+  </slide>  <slide class="agile-manifesto level-2" id="id3">
+    <hgroup>
+      <h2>Manifesto ágil</h2>
+    </hgroup>
+    <article class="">
+      <p class="lighten">Estamos descobrindo maneiras melhores de desenvolver
+software, fazendo-o nós mesmos e ajudando outros a
+fazerem o mesmo. Através deste trabalho, passamos a valorizar:</p>
+<ul class="simple">
+<li><span class="lighten">Indivíduos e interações mais que processos e ferramentas</span></li>
+<li><span class="emphasize">Software em funcionamento mais que documentação abrangente</span></li>
+<li><span class="lighten">Colaboração com o cliente mais que negociação de contratos</span></li>
+<li><span class="lighten">Responder a mudanças mais que seguir um plano</span></li>
+</ul>
+<p class="lighten">Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda.</p>
+
+
+
+
+    </article>
+  </slide>
+
+
+  
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

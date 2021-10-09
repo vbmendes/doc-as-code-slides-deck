@@ -1,0 +1,34 @@
+@import url(slides.css);
+ 
+.title-slide { 
+    background: radial-gradient(circle, #4B8BBE 0%, #306998 100%);
+}
+
+.title-slide hgroup h1 {
+    color: white;
+}
+
+.title-slide article p {
+    color: #FFD43B;
+}
+
+.emphasize {
+    color: #306998;
+    font-weight: bold;
+}
+
+.text-and-picture article {
+    display: flex;
+}
+
+a.image-reference {
+    border-bottom: none;
+}
+
+.agile-manifesto {
+    background: url('agile-manifesto-background.jpg');
+}
+
+.lighten {
+    opacity: 0.5;
+}
