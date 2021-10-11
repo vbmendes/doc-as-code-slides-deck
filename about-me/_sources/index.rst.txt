@@ -322,7 +322,7 @@ Fonte: https://datatracker.ietf.org/doc/html/rfc2026
 .. nextslide::
 
 .. image:: _static/sugestao-rfc.png
-    :width: 600
+    :width: 1000
     :alt: Sugestão de modificação em uma RFC.
     :align: center
 
