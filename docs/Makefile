@@ -15,8 +15,13 @@ help:
 
 .PHONY: help Makefile
 
+autobuild: clean
+	sphinx-autobuild -b slides . _build/html
+
+
 serve: clean slides
 	python -m http.server ${PORT} -d "$(BUILDDIR)/slides"
+
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
