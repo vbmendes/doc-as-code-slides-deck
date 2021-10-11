@@ -585,7 +585,7 @@ Qual o contexto prévio necessário?
    :level: 2
 
     .. image:: _static/docs-vs-stackoverflow.jpg
-        :width: 500
+        :width: 650
         :alt: Meme falando que desenvolvedores passam 15 minutos lendo documentação e 2 horas no stack overflow.
         :align: center
 
@@ -600,15 +600,18 @@ Documente a sua solução!
 
 Obrigado pela atenção!
 
-Tem algo a adicionar? Me adiciona nas redes sociais:
+Slides publicados em https://vbmendes.github.io/doc-as-code-slides-deck 
+
+E versionados em https://github.com/vbmendes/doc-as-code-slides-deck.
+
+Tem algo a adicionar? Abre um :emphasize:`PR` ou me adiciona nas redes sociais:
 
 - github.com/:emphasize:`vbmendes`
 - twitter.com/:emphasize:`vbmendes`
 - linkedin.com/in/:emphasize:`viniciusmendes`/
 - ou me chama no :emphasize:`Discord`
 
-Estamos contratando:
-- https://jobs.lever.co/loadsmart/
+Estamos contratando: https://jobs.lever.co/loadsmart/
 
 .. rst-class:: perguntas
 
