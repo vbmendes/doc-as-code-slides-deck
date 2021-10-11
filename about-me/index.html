@@ -78,22 +78,24 @@ URL: https://code.google.com/p/io-2012-slides
 
 
     </article>
-  </slide>  <slide class="level-2" id="agenda">
+  </slide>  <slide class="text-and-picture level-2" id="agenda">
     <hgroup>
       <h2>Agenda</h2>
     </hgroup>
     <article class="">
       <ul class="simple">
-<li>Quem sou eu 5min</li>
-<li>Processo de proposta de solução 5min</li>
-<li>Análise prévia 5min</li>
-<li>Documentação 5min</li>
-<li>Importância em equipes distribuídas 5min</li>
-<li>Exemplos 5min</li>
-<li>Sphinx 5min</li>
-<li>Tradeo-offs 5min</li>
-<li>Perguntas 5min</li>
+<li>Quem sou eu?</li>
+<li>A documentação e o manifesto ágil</li>
+<li>Análise e planejamento de solução</li>
+<li>Documentando decisões</li>
+<li>Disseminando em em equipes distribuídas</li>
+<li>Escalando times de engenharia via RFCs</li>
+<li>Sphinx</li>
+<li>Documentação em geral</li>
+<li>Perguntas</li>
 </ul>
+<a class="reference internal image-reference" href="_images/treasure-map.png"><img alt="Imagem de um mapa do tesouro" src="_images/treasure-map.png" style="width: 300px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://pixabay.com/illustrations/map-treasure-chest-skull-direction-5655572/">https://pixabay.com/illustrations/map-treasure-chest-skull-direction-5655572/</a></p>
 
 
 
@@ -150,50 +152,31 @@ URL: https://code.google.com/p/io-2012-slides
 
 
     </article>
-  </slide>  <slide class="level-2" id="id1">
+  </slide>  <slide class="centered-image-slide level-2" id="id2">
     <hgroup>
       <h2>Eu na comunidade Python</h2>
     </hgroup>
     <article class="">
       <a class="reference internal image-reference" href="_images/pythonbrasil-5.jpg"><img alt="Foto oficial da Python Brasil [5] em Caxias do Sul (2009)" class="align-center" src="_images/pythonbrasil-5.jpg" style="width: 800px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://manual-do-big-kahuna.readthedocs.io/">https://manual-do-big-kahuna.readthedocs.io/</a></p>
 
 
 
 
     </article>
-  </slide>  <slide class="level-2" id="id2">
+  </slide>  <slide class="centered-image-slide level-2" id="id3">
     <hgroup>
       <h2>Eu na comunidade Python</h2>
     </hgroup>
     <article class="">
       <a class="reference internal image-reference" href="_images/pythonbrasil-8.jpg"><img alt="Foto oficial da Python Brasil [8] no Rio de Janeiro (2012)" class="align-center" src="_images/pythonbrasil-8.jpg" style="width: 650px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://manual-do-big-kahuna.readthedocs.io/">https://manual-do-big-kahuna.readthedocs.io/</a></p>
 
 
 
 
     </article>
   </slide>  <slide class="agile-manifesto level-2" id="manifesto-agil">
-    <hgroup>
-      <h2>Manifesto ágil</h2>
-    </hgroup>
-    <article class="">
-      <p>Estamos descobrindo maneiras melhores de desenvolver
-software, fazendo-o nós mesmos e ajudando outros a
-fazerem o mesmo. Através deste trabalho, passamos a valorizar:</p>
-<ul class="simple">
-<li><span class="emphasize">Indivíduos e interações</span> mais que processos e ferramentas</li>
-<li><span class="emphasize">Software em funcionamento</span> mais que documentação abrangente</li>
-<li><span class="emphasize">Colaboração com o cliente</span> mais que negociação de contratos</li>
-<li><span class="emphasize">Responder a mudanças</span> mais que seguir um plano</li>
-</ul>
-<p>Ou seja, mesmo havendo valor nos itens à direita,
-valorizamos mais os itens à esquerda.</p>
-
-
-
-
-    </article>
-  </slide>  <slide class="agile-manifesto level-2" id="id3">
     <hgroup>
       <h2>Manifesto ágil</h2>
     </hgroup>
@@ -208,6 +191,621 @@ fazerem o mesmo. Através deste trabalho, passamos a valorizar:</p>
 <li><span class="lighten">Responder a mudanças mais que seguir um plano</span></li>
 </ul>
 <p class="lighten">Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda.</p>
+
+
+
+
+    </article>
+  </slide>  <slide class="agile-manifesto level-2" id="id4">
+    <hgroup>
+      <h2>Manifesto ágil</h2>
+    </hgroup>
+    <article class="">
+      <p class="lighten">Estamos descobrindo maneiras melhores de desenvolver
+software, fazendo-o nós mesmos e ajudando outros a
+fazerem o mesmo. Através deste trabalho, passamos a valorizar:</p>
+<ul class="simple">
+<li><span class="lighten">Indivíduos e interações mais que processos e ferramentas</span></li>
+<li><span class="lighten">Software em funcionamento mais que documentação abrangente</span></li>
+<li><span class="lighten">Colaboração com o cliente mais que negociação de contratos</span></li>
+<li><span class="lighten">Responder a mudanças mais que seguir um plano</span></li>
+</ul>
+<p class="emphasize">Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda.</p>
+
+
+
+
+    </article>
+  </slide>  <slide class="centered-image-slide level-2" id="contexto">
+    <hgroup>
+      <h2>Contexto</h2>
+    </hgroup>
+    <article class="">
+      <blockquote>
+<div><a class="reference internal image-reference" href="_images/waterfall.png"><img alt="Diagrama ilustrando um modelo de desenvolvimento de software em cascata." class="align-center" src="_images/waterfall.png" style="width: 700px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://en.wikipedia.org/wiki/Waterfall_model">https://en.wikipedia.org/wiki/Waterfall_model</a></p>
+</div></blockquote>
+
+
+
+
+    </article>
+  </slide>  <slide class="centered-image-slide level-2" id="id5">
+    <hgroup>
+      <h2>Contexto</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/whales-rup.jpg"><img alt="Diagrama de baleias do RUP" class="align-center" src="_images/whales-rup.jpg" style="width: 700px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="http://pmbok-rup-ufs.blogspot.com/2014/01/as-baleias-do-rup.html">http://pmbok-rup-ufs.blogspot.com/2014/01/as-baleias-do-rup.html</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-diagram-slide level-2" id="id6">
+    <hgroup>
+      <h2>Contexto</h2>
+    </hgroup>
+    <article class="">
+      <img alt="&quot;Analista de negócios&quot; -&gt; &quot;Analista de requisitos&quot;: Demanda de produto &quot;Analista de requisitos&quot; -&gt; &quot;Analista de negócios&quot;: Elicitação de requisitos &quot;Analista de negócios&quot; -&gt; &quot;Analista de requisitos&quot;: Aprovação de requisitos &quot;Analista de requisitos&quot; -&gt; &quot;Arquiteto de software&quot;: Documento de requisitos &quot;Arquiteto de software&quot; -&gt; &quot;Equipe de desenvolvimento&quot;: Documento de arquitetura &quot;Equipe de desenvolvimento&quot; -&gt; &quot;Equipe de desenvolvimento&quot;: Desenvolve o produto &quot;Equipe de desenvolvimento&quot; -&gt; &quot;Analista de testes&quot;: Demanda de teste &quot;Analista de testes&quot; -&gt; &quot;Analista de testes&quot;: Plano de teste &quot;Analista de testes&quot; -&gt; &quot;Analista de testes&quot;: Suíte de teste &quot;Analista de testes&quot; -&gt; &quot;Equipe de desenvolvimento&quot;: Relatório de teste &quot;Equipe de desenvolvimento&quot; -&gt; &quot;Equipe de desenvolvimento&quot;: Correção de bugs &quot;Equipe de desenvolvimento&quot; -&gt; &quot;Analista de requisitos&quot;: Produto para homologação &quot;Analista de requisitos&quot; -&gt; &quot;Analista de negócios&quot;: Roteiro de homologação &quot;Analista de negócios&quot; -&gt; &quot;Analista de requisitos&quot;: Relatório de homologação" class="kroki kroki-plantuml" src="_images/kroki-74c052f26451f018e386528eef113b7ec3a0544a.svg" />
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id7">
+    <hgroup>
+      <h2>Contexto</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/termos_de_servico.jpg"><img alt="Meme sobre o tempo que leva lendo termos de uso" class="align-center" src="_images/termos_de_servico.jpg" style="width: 350px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://tenso.blog.br/declaro-que-li-e-aceito-os-termos/">https://tenso.blog.br/declaro-que-li-e-aceito-os-termos/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="id1">
+    <hgroup>
+      <h2>Manifesto ágil</h2>
+    </hgroup>
+    <article class="">
+      <p class="lighten">Estamos descobrindo maneiras melhores de desenvolver
+software, fazendo-o nós mesmos e ajudando outros a
+fazerem o mesmo. Através deste trabalho, passamos a valorizar:</p>
+<ul class="simple">
+<li><span class="lighten">Indivíduos e interações mais que processos e ferramentas</span></li>
+<li><span class="emphasize">Software em funcionamento mais que documentação abrangente</span></li>
+<li><span class="lighten">Colaboração com o cliente mais que negociação de contratos</span></li>
+<li><span class="lighten">Responder a mudanças mais que seguir um plano</span></li>
+</ul>
+<p class="lighten">Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda.</p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id8">
+    <hgroup>
+      <h2>Manifesto ágil</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/quadro-bpmn.jpg"><img alt="Quadro com processo em BPMN desenhado" class="align-center" src="_images/quadro-bpmn.jpg" style="width: 350px;" /></a>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="analise-e-planejamento">
+    <hgroup>
+      <h2>Análise e planejamento</h2>
+    </hgroup>
+    <article class="">
+      <ul class="simple">
+<li>Entender o <span class="emphasize">problema</span></li>
+<li>Modelar o <span class="emphasize">domínio</span></li>
+<li>Modelar as <span class="emphasize">operações</span></li>
+<li><dl class="first docutils">
+<dt>Qual o <span class="emphasize">driver</span>?</dt><dd><ul>
+<li>Time to market? Segurança? Performance?</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Qual o <span class="emphasize">volume esperado</span>?</li>
+<li><dl class="first docutils">
+<dt>Identificar as possíveis <cite>integrações</cite></dt><dd><ul>
+<li>Vai ser <span class="emphasize">síncrona ou assíncrona</span>? Por quê?</li>
+<li>Vamos testar alguma <span class="emphasize">tecnologia nova</span>? Por quê?</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+
+
+
+    </article>
+  </slide>  <slide class="centered-title-slide level-2" id="onde-voce-guarda-essas-decisoes">
+    <hgroup>
+      <h2>Onde você guarda essas decisões?</h2>
+    </hgroup>
+    <article class="">
+      
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id9">
+    <hgroup>
+      <h2>Onde você guarda essas decisões?</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/tirinha1777.png"><img alt="Tirinha sobre a documentação estar na cabeça das pessoas" class="align-center" src="_images/tirinha1777.png" style="width: 1000px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://vidadeprogramador.com.br/2018/01/08/documentacao-em-ferias/">https://vidadeprogramador.com.br/2018/01/08/documentacao-em-ferias/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="id10">
+    <hgroup>
+      <h2>Onde você guarda essas decisões?</h2>
+    </hgroup>
+    <article class="">
+      <ul class="simple">
+<li><span class="emphasize">Tire das cabeças</span> das pessoas</li>
+<li>Emails? Documentos físicos? Quadro?</li>
+<li><dl class="first docutils">
+<dt>Está acessível a todos?</dt><dd><ul>
+<li>Em um <span class="emphasize">lugar conhecido</span> por todos?</li>
+<li><span class="emphasize">Fácil de encontrar</span>?</li>
+<li>Todos têm <span class="emphasize">direito a acessar</span>?</li>
+<li>Na dúvida, qual a <span class="emphasize">fonte da verdade</span>?</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id11">
+    <hgroup>
+      <h2>Onde você guarda essas decisões?</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/remote-collocated.png"><img alt="Figura descrevendo 4 categorias de trabalho: single-site, multi-site, sattelite workers e remote-first" class="align-center" src="_images/remote-collocated.png" style="width: 600px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://martinfowler.com/articles/remote-or-co-located.html">https://martinfowler.com/articles/remote-or-co-located.html</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="ferramentas">
+    <hgroup>
+      <h2>Ferramentas</h2>
+    </hgroup>
+    <article class="">
+      <ul class="simple">
+<li><dl class="first docutils">
+<dt>Armazenamento, compartilhamento e colaboração em <span class="emphasize">arquivos</span></dt><dd><ul>
+<li>Google Drive, OneDrive, etc</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><span class="emphasize">Wikis</span></li>
+<li><dl class="first docutils">
+<dt><span class="emphasize">Chat</span> instantâneo</dt><dd><ul>
+<li>Slack, Discord, Whatsapp, etc</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><span class="emphasize">Emails</span></li>
+<li><dl class="first docutils">
+<dt><span class="emphasize">Vídeoconferência</span></dt><dd><ul>
+<li>Zoom, Meet, Teams, etc</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>A tendência natural é <span class="emphasize">espalharmos</span> nossa documentação por cada uma dessas ferramentas.</p>
+
+
+
+
+    </article>
+  </slide>  <slide class="centered-title-slide level-2" id="colaboracao-sincrona-ou-assincrona">
+    <hgroup>
+      <h2>Colaboração síncrona ou assíncrona?</h2>
+    </hgroup>
+    <article class="">
+      
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id12">
+    <hgroup>
+      <h2>Colaboração síncrona ou assíncrona?</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/mail-gnu.png"><img alt="E-mail onde Richard Stallman anuncia o GNU" class="align-center" src="_images/mail-gnu.png" style="width: 900px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://groups.google.com/g/net.unix-wizards/c/8twfRPM79u0/m/1xlglzrWrU0J">https://groups.google.com/g/net.unix-wizards/c/8twfRPM79u0/m/1xlglzrWrU0J</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id13">
+    <hgroup>
+      <h2>Colaboração síncrona ou assíncrona?</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/pep.png"><img alt="Página inicial dos PEPs" class="align-center" src="_images/pep.png" style="width: 900px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://www.python.org/dev/peps/">https://www.python.org/dev/peps/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id14">
+    <hgroup>
+      <h2>Colaboração síncrona ou assíncrona?</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/rfc.png"><img alt="Exemplo de RFC 2026 que explica o processo de padronização da internet" class="align-center" src="_images/rfc.png" style="width: 600px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc2026">https://datatracker.ietf.org/doc/html/rfc2026</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id15">
+    <hgroup>
+      <h2>Colaboração síncrona ou assíncrona?</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/sugestao-rfc.png"><img alt="Sugestão de modificação em uma RFC." class="align-center" src="_images/sugestao-rfc.png" style="width: 600px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://datatracker.ietf.org/doc/rfc3667/ballot/">https://datatracker.ietf.org/doc/rfc3667/ballot/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="centered-title-slide level-2" id="escalando-times-de-engenharia-via-rfcs-anotando-coisas">
+    <hgroup>
+      <h2>Escalando times de engenharia via RFCs: anotando coisas</h2>
+    </hgroup>
+    <article class="">
+      <p class="citation-reference">– Gergely Orosz: <a class="reference external" href="https://blog.pragmaticengineer.com/scaling-engineering-teams-via-writing-things-down-rfcs/">https://blog.pragmaticengineer.com/scaling-engineering-teams-via-writing-things-down-rfcs/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="roteiro">
+    <hgroup>
+      <h2>Roteiro</h2>
+    </hgroup>
+    <article class="">
+      <ul class="simple">
+<li><span class="emphasize">Planeje</span> antes de construir algo novo</li>
+<li><span class="emphasize">Capture esse plano</span> em um pequeno documento escrito</li>
+<li>Selecione algumas pessoas para <span class="emphasize">comentar e aprovar</span> esse plano</li>
+<li><span class="emphasize">Disponibilize</span> esse plano <span class="emphasize">para todos</span> os envolvidos</li>
+<li><span class="emphasize">Dissemine a cultura</span> na organização</li>
+</ul>
+
+
+
+
+    </article>
+  </slide>  <slide class="centered-title-slide level-2" id="utilize-ferramentas-colaborativas">
+    <hgroup>
+      <h2>Utilize ferramentas colaborativas</h2>
+    </hgroup>
+    <article class="">
+      
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id16">
+    <hgroup>
+      <h2>Utilize ferramentas colaborativas</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/excalidraw.png"><img alt="Página inicial da ferramenta Excalidraw" class="align-center" src="_images/excalidraw.png" style="width: 900px;" /></a>
+<p class="citation-reference"><a class="reference external" href="https://excalidraw.com/">https://excalidraw.com/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id17">
+    <hgroup>
+      <h2>Utilize ferramentas colaborativas</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/mermaid-js.png"><img alt="Página inicial da ferramenta Mermaid JS" class="align-center" src="_images/mermaid-js.png" style="width: 900px;" /></a>
+<p class="citation-reference"><a class="reference external" href="https://mermaid-js.github.io/mermaid/#/">https://mermaid-js.github.io/mermaid/#/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id18">
+    <hgroup>
+      <h2>Utilize ferramentas colaborativas</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/mermaid-live-editor.png"><img alt="Editor online do Mermaid JS" class="align-center" src="_images/mermaid-live-editor.png" style="width: 850px;" /></a>
+<p class="citation-reference"><a class="reference external" href="https://mermaid-js.github.io/mermaid-live-editor/">https://mermaid-js.github.io/mermaid-live-editor/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id19">
+    <hgroup>
+      <h2>Utilize ferramentas colaborativas</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/kroki.png"><img alt="Página inicial da ferramenta Kroki" class="align-center" src="_images/kroki.png" style="width: 600px;" /></a>
+<p class="citation-reference"><a class="reference external" href="https://kroki.io/">https://kroki.io/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id20">
+    <hgroup>
+      <h2>Utilize ferramentas colaborativas</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/kroki_cheatsheet_20210515_v1.1_EN.jpg"><img alt="Cheatsheet de diagramas Kroki" class="align-center" src="_images/kroki_cheatsheet_20210515_v1.1_EN.jpg" style="width: 1000px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://kroki.io/assets/kroki_cheatsheet_20210515_v1.1_EN.jpeg">https://kroki.io/assets/kroki_cheatsheet_20210515_v1.1_EN.jpeg</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id21">
+    <hgroup>
+      <h2>Utilize ferramentas colaborativas</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/kroki-sphinx.png"><img alt="Projeto que integra kroki e sphinx no Github" class="align-center" src="_images/kroki-sphinx.png" style="width: 1000px;" /></a>
+<p class="citation-reference"><a class="reference external" href="https://github.com/sphinx-contrib/kroki">https://github.com/sphinx-contrib/kroki</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id22">
+    <hgroup>
+      <h2>Utilize ferramentas colaborativas</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/documentacao-sphinx.png"><img alt="Documentação do Sphinx." class="align-center" src="_images/documentacao-sphinx.png" style="width: 850px;" /></a>
+<p class="citation-reference"><a class="reference external" href="https://www.sphinx-doc.org/en/master/">https://www.sphinx-doc.org/en/master/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id23">
+    <hgroup>
+      <h2>Utilize ferramentas colaborativas</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/sphinx-quickstart.png"><img alt="Quickstart do Sphinx." class="align-center" src="_images/sphinx-quickstart.png" style="width: 850px;" /></a>
+<p>E aprenda um pouco de reStructured Text.</p>
+<div class="citation-reference line-block">
+<div class="line"><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">https://www.sphinx-doc.org/en/master/usage/quickstart.html</a></div>
+<div class="line"><a class="reference external" href="https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html">https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html</a></div>
+<div class="line"><a class="reference external" href="https://docutils.sourceforge.io/rst.html">https://docutils.sourceforge.io/rst.html</a></div>
+</div>
+
+
+
+
+    </article>
+  </slide>  <slide class="centered-image-slide level-2" id="github-actions">
+    <hgroup>
+      <h2>Github actions</h2>
+    </hgroup>
+    <article class="below">
+      <a class="reference internal image-reference" href="_images/github-actions.png"><img alt="Github actions mostrando o pipeline de construção desses slides." class="align-center" src="_images/github-actions.png" style="width: 850px;" /></a>
+<p><a class="reference external" href="https://vbmendes.github.io/doc-as-code-slides-deck">https://vbmendes.github.io/doc-as-code-slides-deck</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id24">
+    <hgroup>
+      <h2>Github actions</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/documentacao-django.png"><img alt="Documentação do django." class="align-center" src="_images/documentacao-django.png" style="width: 750px;" /></a>
+<p class="citation-reference"><a class="reference external" href="https://docs.djangoproject.com/">https://docs.djangoproject.com/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id25">
+    <hgroup>
+      <h2>Github actions</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/documentacao-pytest.png"><img alt="Documentação do pytest." class="align-center" src="_images/documentacao-pytest.png" style="width: 750px;" /></a>
+<p class="citation-reference"><a class="reference external" href="https://docs.pytest.org/">https://docs.pytest.org/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="pull-request-no-github">
+    <hgroup>
+      <h2>Pull request no Github</h2>
+    </hgroup>
+    <article class="">
+      <ul class="simple">
+<li>Ferramenta <span class="emphasize">familiar</span></li>
+<li>Mantém <span class="emphasize">histórico e rastreabilidade</span></li>
+<li>Permite discussão <span class="emphasize">contextual</span></li>
+<li><span class="emphasize">Sugestões</span> de melhoria</li>
+<li><span class="emphasize">Aprovações</span></li>
+<li>Integra ao <span class="emphasize">pipeline</span> de build</li>
+</ul>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id26">
+    <hgroup>
+      <h2>Pull request no Github</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/rfc-process.png"><img alt="Diagrama representando o processo de análise por RFCs" class="align-center" src="_images/rfc-process.png" style="width: 800px;" /></a>
+<p class="citation-reference">Fontes: <a class="reference external" href="https://thenounproject.com/term/development-team/1405948/">https://thenounproject.com/term/development-team/1405948/</a> e <a class="reference external" href="https://pxhere.com/en/photo/1445987">https://pxhere.com/en/photo/1445987</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="beneficios">
+    <hgroup>
+      <h2>Benefícios</h2>
+    </hgroup>
+    <article class="">
+      <ul class="simple">
+<li>Melhor <span class="emphasize">visibilidade</span> das decisões</li>
+<li>Tende a gerar <span class="emphasize">decisões mais embasadas</span></li>
+<li><span class="emphasize">Disseminação</span> de conhecimento</li>
+<li><span class="emphasize">Responsabilidade compartilhada</span></li>
+<li>Facilita o processo de <span class="emphasize">on-boarding</span></li>
+</ul>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-image-slide level-2" id="id27">
+    <hgroup>
+      <h2>Benefícios</h2>
+    </hgroup>
+    <article class="">
+      <a class="reference internal image-reference" href="_images/tirinha1735.png"><img alt="Tirinha sobre a documentação ajudar no on-boarding" class="align-center" src="_images/tirinha1735.png" style="width: 1000px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://vidadeprogramador.com.br/2017/09/19/fiz-uma-documentacao/">https://vidadeprogramador.com.br/2017/09/19/fiz-uma-documentacao/</a></p>
+
+
+
+
+    </article>
+  </slide>  <slide class="level-2" id="documentacao-pode-economizar-tempo">
+    <hgroup>
+      <h2>Documentação pode economizar tempo</h2>
+    </hgroup>
+    <article class="">
+      <ul class="simple">
+<li>Evite <span class="emphasize">explicar várias vezes</span> a mesma coisa</li>
+<li>Se perceber que está fazendo isso, <span class="emphasize">pare e documente</span></li>
+<li>Passe a responder mais com um <span class="emphasize">link pra documentação</span></li>
+<li>Deixe bem documentado e você vai ter <span class="emphasize">mais tempo para produzir</span> mais features e documentações.</li>
+</ul>
+
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-title-slide level-2" id="qual-e-o-seu-publico-alvo">
+    <hgroup>
+      <h2>Qual é o seu público alvo?</h2>
+    </hgroup>
+    <article class="">
+      
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-title-slide level-2" id="qual-o-contexto-previo-necessario">
+    <hgroup>
+      <h2>Qual o contexto prévio necessário?</h2>
+    </hgroup>
+    <article class="">
+      
+
+
+
+    </article>
+  </slide>  <slide class="no-title centered-title-slide level-2" id="a-maioria-dos-seus-usuarios-em-potencial-nunca-sabera-porque-eles-nunca-encontrarao-seu-projeto-e-se-o-encontrarem-nao-terao-ideia-de-como-devem-usa-lo">
+    <hgroup>
+      <h2>“A maioria dos seus usuários em potencial nunca saberá, porque eles nunca encontrarão seu projeto e, se o encontrarem, não terão ideia de como devem usá-lo.”</h2>
+    </hgroup>
+    <article class="">
+      <div class="citation-reference line-block">
+<div class="line">Livro: Docs for Developers: An Engineer’s Field Guide to Technical Writing (2021)</div>
+<div class="line">por Jared Bhatti, Zachary Sarah Corleissen, Jen Lambourne, David Nunez, Heidi Waterhouse</div>
+</div>
+
+
+
+
+    </article>
+  </slide>  <slide class="admonition- no-title centered-image-slide level-2">
+    <hgroup>
+      <h2></h2>
+    </hgroup>
+    <article class="">
+      <blockquote>
+<div><a class="reference internal image-reference" href="_images/code-without-reading-docs.jpg"><img alt="Meme de um soldado segurando um míssil no ombro com outro segurando uma machadinha para bater no míssil e dispará-lo. Com os dizeres: &quot;Quando você começa a programar em uma nova linguagem sem ler a documentação.&quot;" class="align-center" src="_images/code-without-reading-docs.jpg" style="width: 500px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://twitter.com/code_memez/status/1300377248189407232">https://twitter.com/code_memez/status/1300377248189407232</a></p>
+</div></blockquote>
+
+
+
+
+    </article>
+  </slide>  <slide class="admonition- no-title centered-image-slide level-2">
+    <hgroup>
+      <h2></h2>
+    </hgroup>
+    <article class="">
+      <blockquote>
+<div><a class="reference internal image-reference" href="_images/docs-vs-stackoverflow.jpg"><img alt="Meme falando que desenvolvedores passam 15 minutos lendo documentação e 2 horas no stack overflow." class="align-center" src="_images/docs-vs-stackoverflow.jpg" style="width: 500px;" /></a>
+<p class="citation-reference">Fonte: <a class="reference external" href="https://astrologymemes.com/i/read-the-documentation-for-15-minutes-stack-overflow-for-2-2089018d68c149f4b5653486caefbd3a">https://astrologymemes.com/i/read-the-documentation-for-15-minutes-stack-overflow-for-2-2089018d68c149f4b5653486caefbd3a</a></p>
+</div></blockquote>
+
+
+
+
+    </article>
+  </slide>  <slide class="last-slide level-2" id="documente-a-sua-solucao">
+    <hgroup>
+      <h2>Documente a sua solução!</h2>
+    </hgroup>
+    <article class="">
+      <p>Obrigado pela atenção!</p>
+<p>Tem algo a adicionar? Me adiciona nas redes sociais:</p>
+<ul class="simple">
+<li>github.com/<span class="emphasize">vbmendes</span></li>
+<li>twitter.com/<span class="emphasize">vbmendes</span></li>
+<li>linkedin.com/in/<span class="emphasize">viniciusmendes</span>/</li>
+<li>ou me chama no <span class="emphasize">Discord</span></li>
+</ul>
+<p>Estamos contratando:
+- <a class="reference external" href="https://jobs.lever.co/loadsmart/">https://jobs.lever.co/loadsmart/</a></p>
+<p class="perguntas">Perguntas?</p>
 
 
 
