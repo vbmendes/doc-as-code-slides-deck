@@ -602,7 +602,7 @@ Obrigado pela atenção!
 
 Slides publicados em https://vbmendes.github.io/doc-as-code-slides-deck 
 
-E versionados em https://github.com/vbmendes/doc-as-code-slides-deck.
+E versionados em https://github.com/vbmendes/doc-as-code-slides-deck
 
 Tem algo a adicionar? Abre um :emphasize:`PR` ou me adiciona nas redes sociais:
 
