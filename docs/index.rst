@@ -18,7 +18,7 @@ Agenda
 * A documentação e o manifesto ágil
 * Análise e planejamento de solução
 * Documentando decisões
-* Disseminando em em equipes distribuídas
+* Disseminando em equipes distribuídas
 * Escalando times de engenharia via RFCs
 * Sphinx
 * Documentação em geral
@@ -40,7 +40,7 @@ Quem sou eu?
 * :emphasize:`Vinicius Mendes`
   
     - :emphasize:`13 anos` na área de TI
-    - Back-end Python Developer @ :emphasize:`Loadsmart` desde abr/21
+    - Back-end Python Engineer @ :emphasize:`Loadsmart` desde abr/21
     - Antes: 
 
         -  Solucione Sistemas
@@ -49,7 +49,7 @@ Quem sou eu?
         -  Professor Substituto na UFRN
     
 .. image:: _static/profile-picture.jpg
-    :width: 400
+    :width: 380
     :alt: Minha foto com minha estação de trabalho ao fundo
 
 Eu na comunidade Python
