@@ -479,21 +479,6 @@ E aprenda um pouco de reStructured Text.
 | https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html
 | https://docutils.sourceforge.io/rst.html
 
-
-.. rst-class:: centered-image-slide content-below
-
-Github actions
---------------
-
-.. image:: _static/github-actions.png
-    :width: 850
-    :alt: Github actions mostrando o pipeline de construção desses slides.
-    :align: center
-
-https://vbmendes.github.io/doc-as-code-slides-deck
-
-
-
 .. rst-class:: no-title centered-image-slide
 .. nextslide::
 
@@ -515,6 +500,18 @@ Pull request no Github
 - :emphasize:`Sugestões` de melhoria
 - :emphasize:`Aprovações`
 - Integra ao :emphasize:`pipeline` de build
+
+.. rst-class:: centered-image-slide
+
+Github actions
+--------------
+
+.. image:: _static/github-actions.png
+    :width: 850
+    :alt: Github actions mostrando o pipeline de construção desses slides.
+    :align: center
+
+https://vbmendes.github.io/doc-as-code-slides-deck
 
 .. rst-class:: centered-title-slide
 
