@@ -139,3 +139,18 @@ slides slide.centered-title-slide .citation-reference a {
     font-size: 3rem;
     text-align: center;
 }
+
+.centered-title-slide article {
+    margin-top: -20%;
+    text-align: center;
+}
+
+.centered-title-slide article a {
+    color: white;
+    opacity: 0.8;
+}
+
+.centered-title-slide article a:hover {
+    color: white !important;
+    opacity: 1;
+}
