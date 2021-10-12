@@ -1,7 +1,5 @@
 .. A importancia da documentacao no trabalho distribuido documentation master file, created by
    sphinx-quickstart on Mon Oct  4 16:12:55 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 .. role:: emphasize
 .. role:: lighten
@@ -57,7 +55,7 @@ Quem sou eu?
 Eu na comunidade Python
 -----------------------
 
-- Na lista :code:`django-brasil` desde 2008 e administrador desde 2011
+- Na lista :code:`django-brasil` desde 2008
 - Python Brasil [5] em Caxias do Sul (2009)
 - Python Brasil [8] no Rio de Janeiro (2012)
 - Python Brasil [10] em Porto de Galinhas (2014)
@@ -126,31 +124,20 @@ fazerem o mesmo. Através deste trabalho, passamos a valorizar:
 
 Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda.
 
-.. rst-class::  centered-image-slide
+.. rst-class:: no-title centered-image-slide
 
 Contexto
 --------
 
-    .. image:: _static/waterfall.png
-        :width: 700
-        :alt: Diagrama ilustrando um modelo de desenvolvimento de software em cascata.
-        :align: center
-
-    .. rst-class:: citation-reference
-
-    Fonte: https://en.wikipedia.org/wiki/Waterfall_model
-
-.. rst-class::  centered-image-slide
-.. nextslide::
-
-.. image:: _static/whales-rup.jpg
+.. image:: _static/waterfall.png
     :width: 700
-    :alt: Diagrama de baleias do RUP
+    :alt: Diagrama ilustrando um modelo de desenvolvimento de software em cascata.
     :align: center
 
 .. rst-class:: citation-reference
 
-Fonte: http://pmbok-rup-ufs.blogspot.com/2014/01/as-baleias-do-rup.html
+Fonte: https://en.wikipedia.org/wiki/Waterfall_model
+
 
 .. rst-class:: no-title centered-diagram-slide
 .. nextslide::
@@ -158,32 +145,27 @@ Fonte: http://pmbok-rup-ufs.blogspot.com/2014/01/as-baleias-do-rup.html
 .. kroki::
     :type: plantuml
 
-    "Analista de negócios" -> "Analista de requisitos": Demanda de produto
-    "Analista de requisitos" -> "Analista de negócios": Elicitação de requisitos
-    "Analista de negócios" -> "Analista de requisitos": Aprovação de requisitos
-    "Analista de requisitos" -> "Arquiteto de software": Documento de requisitos
-    "Arquiteto de software" -> "Equipe de desenvolvimento": Documento de arquitetura
+    "Produto" -> "Requisitos": Demanda de produto
+    "Requisitos" -> "Produto": Elicitação de requisitos
+    "Produto" -> "Requisitos": Aprovação de requisitos
+    "Requisitos" -> "Arquitetura": Documento de requisitos
+    "Arquitetura" -> "Equipe de desenvolvimento": Documento de arquitetura
     "Equipe de desenvolvimento" -> "Equipe de desenvolvimento": Desenvolve o produto
-    "Equipe de desenvolvimento" -> "Analista de testes": Demanda de teste
-    "Analista de testes" -> "Analista de testes": Plano de teste
-    "Analista de testes" -> "Analista de testes": Suíte de teste
-    "Analista de testes" -> "Equipe de desenvolvimento": Relatório de teste
+    "Equipe de desenvolvimento" -> "Testes": Demanda de teste
+    "Testes" -> "Testes": Plano de teste
+    "Testes" -> "Testes": Suíte de teste
+    "Testes" -> "Equipe de desenvolvimento": Relatório de teste
     "Equipe de desenvolvimento" -> "Equipe de desenvolvimento": Correção de bugs
-    "Equipe de desenvolvimento" -> "Analista de requisitos": Produto para homologação
-    "Analista de requisitos" -> "Analista de negócios": Roteiro de homologação
-    "Analista de negócios" -> "Analista de requisitos": Relatório de homologação
+    "Equipe de desenvolvimento" -> "Requisitos": Produto para homologação
+    "Requisitos" -> "Produto": Roteiro de homologação
+    "Produto" -> "Requisitos": Relatório de homologação
 
-.. rst-class:: no-title centered-image-slide
-.. nextslide::
+.. rst-class:: centered-title-slide
 
-.. image:: _static/termos_de_servico.jpg
-    :width: 350
-    :alt: Meme sobre o tempo que leva lendo termos de uso
-    :align: center
+TL;DR
+-----
 
-.. rst-class:: citation-reference
-
-Fonte: https://tenso.blog.br/declaro-que-li-e-aceito-os-termos/
+.. rst-class:: agile-manifesto
 
 Manifesto ágil
 --------------
@@ -455,6 +437,7 @@ E aprenda um pouco de reStructured Text.
 
 
 .. rst-class:: centered-image-slide content-below
+
 Github actions
 --------------
 
@@ -479,20 +462,6 @@ https://vbmendes.github.io/doc-as-code-slides-deck
 
 https://docs.djangoproject.com/
 
-.. rst-class:: no-title centered-image-slide
-.. nextslide::
-
-.. image:: _static/documentacao-pytest.png
-    :width: 750
-    :alt: Documentação do pytest.
-    :align: center
-
-.. rst-class:: citation-reference
-
-https://docs.pytest.org/
-
-
-
 Pull request no Github
 ----------------------
 
@@ -502,6 +471,17 @@ Pull request no Github
 - :emphasize:`Sugestões` de melhoria
 - :emphasize:`Aprovações`
 - Integra ao :emphasize:`pipeline` de build
+
+.. rst-class:: centered-title-slide
+
+Vamos praticar?
+---------------
+
+.. |docs_link| raw:: html
+
+   <a href="https://github.com/vbmendes/doc-as-code-slides-deck" target="_self">https://github.com/vbmendes/doc-as-code-slides-deck</a>
+
+|docs_link|
 
 .. rst-class:: no-title centered-image-slide
 .. nextslide::
@@ -515,6 +495,12 @@ Pull request no Github
 
 Fontes: https://thenounproject.com/term/development-team/1405948/ e https://pxhere.com/en/photo/1445987
 
+.. rst-class:: centered-title-slide
+
+Deu certo?
+----------
+
+|docs_link|
 
 Benefícios
 ----------
