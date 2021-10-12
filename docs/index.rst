@@ -138,7 +138,6 @@ Contexto
 
 Fonte: https://en.wikipedia.org/wiki/Waterfall_model
 
-
 .. rst-class:: no-title centered-diagram-slide
 .. nextslide::
 
@@ -164,26 +163,6 @@ Fonte: https://en.wikipedia.org/wiki/Waterfall_model
 
 TL;DR
 -----
-
-.. rst-class:: agile-manifesto
-
-Manifesto ágil
---------------
-
-.. rst-class:: lighten
-
-Estamos descobrindo maneiras melhores de desenvolver
-software, fazendo-o nós mesmos e ajudando outros a
-fazerem o mesmo. Através deste trabalho, passamos a valorizar:
-
-- :lighten:`Indivíduos e interações mais que processos e ferramentas`
-- :emphasize:`Software em funcionamento mais que documentação abrangente`
-- :lighten:`Colaboração com o cliente mais que negociação de contratos`
-- :lighten:`Responder a mudanças mais que seguir um plano`
-
-.. rst-class:: lighten
-
-Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda.
 
 .. rst-class:: no-title centered-image-slide
 .. nextslide::
@@ -500,7 +479,11 @@ Fontes: https://thenounproject.com/term/development-team/1405948/ e https://pxhe
 Deu certo?
 ----------
 
-|docs_link|
+.. |docs_actions_link| raw:: html
+
+   <a href="https://github.com/vbmendes/doc-as-code-slides-deck/actions" target="_self">https://github.com/vbmendes/doc-as-code-slides-deck/actions</a>
+
+|docs_actions_link|
 
 Benefícios
 ----------
