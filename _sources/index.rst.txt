@@ -18,7 +18,7 @@ Agenda
 * A documentação e o manifesto ágil
 * Análise e planejamento de solução
 * Documentando decisões
-* Disseminando em em equipes distribuídas
+* Disseminando em equipes distribuídas
 * Escalando times de engenharia via RFCs
 * Sphinx
 * Documentação em geral
@@ -39,8 +39,7 @@ Quem sou eu?
 
 * :emphasize:`Vinicius Mendes`
   
-    - :emphasize:`13 anos` na área de TI
-    - Back-end Python Developer @ :emphasize:`Loadsmart` desde abr/21
+    - Back-end Python Engineer @ :emphasize:`Loadsmart` desde abr/21
     - Antes: 
 
         -  Solucione Sistemas
@@ -49,21 +48,38 @@ Quem sou eu?
         -  Professor Substituto na UFRN
     
 .. image:: _static/profile-picture.jpg
-    :width: 400
+    :width: 340
     :alt: Minha foto com minha estação de trabalho ao fundo
+
+.. rst-class::  centered-image-slide
 
 Eu na comunidade Python
 -----------------------
 
-- Na lista :code:`django-brasil` desde 2008
-- Python Brasil [5] em Caxias do Sul (2009)
-- Python Brasil [8] no Rio de Janeiro (2012)
-- Python Brasil [10] em Porto de Galinhas (2014)
-- Python Brasil 2018 em Natal
-- Python Brasil 2021 em |:house:|
+.. image:: _static/django-brasil.png
+    :width: 850
+    :alt: Captura de tela da lista de discussão django-brasil
+    :align: center
+
+https://groups.google.com/g/django-brasil
 
 .. rst-class::  centered-image-slide
-.. nextslide::
+
+Eu na comunidade Python
+-----------------------
+
+.. image:: _static/django-brasil-link.png
+    :width: 870
+    :alt: Captura de tela de mensagem orientando a consultar a documentação
+    :align: center
+
+https://groups.google.com/g/django-brasil
+
+.. rst-class::  centered-image-slide
+
+
+Python Brasil [5] em Caxias do Sul (2009)
+-----------------------------------------
 
 .. image:: _static/pythonbrasil-5.jpg
     :width: 800
@@ -75,7 +91,9 @@ Eu na comunidade Python
 Fonte: https://manual-do-big-kahuna.readthedocs.io/
 
 .. rst-class::  centered-image-slide
-.. nextslide::
+
+Python Brasil [8] no Rio de Janeiro (2012)
+-------------------------------------------
 
 .. image:: _static/pythonbrasil-8.jpg
     :width: 650
@@ -85,6 +103,53 @@ Fonte: https://manual-do-big-kahuna.readthedocs.io/
 .. rst-class:: citation-reference
 
 Fonte: https://manual-do-big-kahuna.readthedocs.io/
+
+.. rst-class::  centered-image-slide
+
+Python Brasil 2014 em Porto de Galinhas
+---------------------------------------
+
+.. image:: _static/pythonbrasil-2014.jpg
+    :width: 950
+    :alt: Foto oficial da Python Brasil 2014 em Porto de Galinhas
+    :align: center
+
+.. rst-class:: citation-reference
+
+Fonte: https://www.sympla.com.br/python-brasil-14__260986
+
+.. rst-class::  centered-image-slide
+
+Python Brasil 2018 em Natal
+---------------------------
+
+.. image:: _static/pythonbrasil-2018.jpg
+    :width: 800
+    :alt: Foto oficial da Python Brasil 2018 em Natal
+    :align: center
+
+.. rst-class:: citation-reference
+
+Fonte: https://www.facebook.com/pythonbrasil/photos/a.379886552033876/2154218104600703
+
+.. rst-class::  centered-image-slide
+
+Python Brasil 2021 em |:house:|
+-------------------------------
+
+.. image:: _static/pythonbrasil-2021.png
+    :width: 950
+    :alt: Banner da Python Brasil 2021
+    :align: center
+
+.. rst-class:: citation-reference
+
+Fonte: https://2021.pythonbrasil.org.br/
+
+.. rst-class:: centered-title-slide
+
+Tá, mas e a documentação?
+-------------------------
 
 .. rst-class:: agile-manifesto
 
@@ -138,7 +203,6 @@ Contexto
 
 Fonte: https://en.wikipedia.org/wiki/Waterfall_model
 
-
 .. rst-class:: no-title centered-diagram-slide
 .. nextslide::
 
@@ -164,26 +228,6 @@ Fonte: https://en.wikipedia.org/wiki/Waterfall_model
 
 TL;DR
 -----
-
-.. rst-class:: agile-manifesto
-
-Manifesto ágil
---------------
-
-.. rst-class:: lighten
-
-Estamos descobrindo maneiras melhores de desenvolver
-software, fazendo-o nós mesmos e ajudando outros a
-fazerem o mesmo. Através deste trabalho, passamos a valorizar:
-
-- :lighten:`Indivíduos e interações mais que processos e ferramentas`
-- :emphasize:`Software em funcionamento mais que documentação abrangente`
-- :lighten:`Colaboração com o cliente mais que negociação de contratos`
-- :lighten:`Responder a mudanças mais que seguir um plano`
-
-.. rst-class:: lighten
-
-Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda.
 
 .. rst-class:: no-title centered-image-slide
 .. nextslide::
@@ -435,21 +479,6 @@ E aprenda um pouco de reStructured Text.
 | https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html
 | https://docutils.sourceforge.io/rst.html
 
-
-.. rst-class:: centered-image-slide content-below
-
-Github actions
---------------
-
-.. image:: _static/github-actions.png
-    :width: 850
-    :alt: Github actions mostrando o pipeline de construção desses slides.
-    :align: center
-
-https://vbmendes.github.io/doc-as-code-slides-deck
-
-
-
 .. rst-class:: no-title centered-image-slide
 .. nextslide::
 
@@ -471,6 +500,18 @@ Pull request no Github
 - :emphasize:`Sugestões` de melhoria
 - :emphasize:`Aprovações`
 - Integra ao :emphasize:`pipeline` de build
+
+.. rst-class:: centered-image-slide
+
+Github actions
+--------------
+
+.. image:: _static/github-actions.png
+    :width: 850
+    :alt: Github actions mostrando o pipeline de construção desses slides.
+    :align: center
+
+https://vbmendes.github.io/doc-as-code-slides-deck
 
 .. rst-class:: centered-title-slide
 
@@ -500,7 +541,11 @@ Fontes: https://thenounproject.com/term/development-team/1405948/ e https://pxhe
 Deu certo?
 ----------
 
-|docs_link|
+.. |docs_actions_link| raw:: html
+
+   <a href="https://github.com/vbmendes/doc-as-code-slides-deck/actions" target="_self">https://github.com/vbmendes/doc-as-code-slides-deck/actions</a>
+
+|docs_actions_link|
 
 Benefícios
 ----------
