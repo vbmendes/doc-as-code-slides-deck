@@ -39,7 +39,6 @@ Quem sou eu?
 
 * :emphasize:`Vinicius Mendes`
   
-    - :emphasize:`13 anos` na área de TI
     - Back-end Python Engineer @ :emphasize:`Loadsmart` desde abr/21
     - Antes: 
 
@@ -49,21 +48,38 @@ Quem sou eu?
         -  Professor Substituto na UFRN
     
 .. image:: _static/profile-picture.jpg
-    :width: 380
+    :width: 340
     :alt: Minha foto com minha estação de trabalho ao fundo
+
+.. rst-class::  centered-image-slide
 
 Eu na comunidade Python
 -----------------------
 
-- Na lista :code:`django-brasil` desde 2008
-- Python Brasil [5] em Caxias do Sul (2009)
-- Python Brasil [8] no Rio de Janeiro (2012)
-- Python Brasil [10] em Porto de Galinhas (2014)
-- Python Brasil 2018 em Natal
-- Python Brasil 2021 em |:house:|
+.. image:: _static/django-brasil.png
+    :width: 850
+    :alt: Captura de tela da lista de discussão django-brasil
+    :align: center
+
+https://groups.google.com/g/django-brasil
 
 .. rst-class::  centered-image-slide
-.. nextslide::
+
+Eu na comunidade Python
+-----------------------
+
+.. image:: _static/django-brasil-link.png
+    :width: 870
+    :alt: Captura de tela de mensagem orientando a consultar a documentação
+    :align: center
+
+https://groups.google.com/g/django-brasil
+
+.. rst-class::  centered-image-slide
+
+
+Python Brasil [5] em Caxias do Sul (2009)
+-----------------------------------------
 
 .. image:: _static/pythonbrasil-5.jpg
     :width: 800
@@ -75,7 +91,9 @@ Eu na comunidade Python
 Fonte: https://manual-do-big-kahuna.readthedocs.io/
 
 .. rst-class::  centered-image-slide
-.. nextslide::
+
+Python Brasil [8] no Rio de Janeiro (2012)
+-------------------------------------------
 
 .. image:: _static/pythonbrasil-8.jpg
     :width: 650
@@ -85,6 +103,53 @@ Fonte: https://manual-do-big-kahuna.readthedocs.io/
 .. rst-class:: citation-reference
 
 Fonte: https://manual-do-big-kahuna.readthedocs.io/
+
+.. rst-class::  centered-image-slide
+
+Python Brasil 2014 em Porto de Galinhas
+---------------------------------------
+
+.. image:: _static/pythonbrasil-2014.jpg
+    :width: 950
+    :alt: Foto oficial da Python Brasil 2014 em Porto de Galinhas
+    :align: center
+
+.. rst-class:: citation-reference
+
+Fonte: https://www.sympla.com.br/python-brasil-14__260986
+
+.. rst-class::  centered-image-slide
+
+Python Brasil 2018 em Natal
+---------------------------
+
+.. image:: _static/pythonbrasil-2018.jpg
+    :width: 800
+    :alt: Foto oficial da Python Brasil 2018 em Natal
+    :align: center
+
+.. rst-class:: citation-reference
+
+Fonte: https://www.facebook.com/pythonbrasil/photos/a.379886552033876/2154218104600703
+
+.. rst-class::  centered-image-slide
+
+Python Brasil 2021 em |:house:|
+-------------------------------
+
+.. image:: _static/pythonbrasil-2021.png
+    :width: 950
+    :alt: Banner da Python Brasil 2021
+    :align: center
+
+.. rst-class:: citation-reference
+
+Fonte: https://2021.pythonbrasil.org.br/
+
+.. rst-class:: centered-title-slide
+
+Tá, mas e a documentação?
+-------------------------
 
 .. rst-class:: agile-manifesto
 
