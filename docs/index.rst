@@ -24,14 +24,6 @@ Agenda
 * Documentação em geral
 * Perguntas
 
-.. image:: _static/treasure-map.png
-    :width: 300
-    :alt: Imagem de um mapa do tesouro
-
-.. rst-class:: citation-reference
-
-Fonte: https://pixabay.com/illustrations/map-treasure-chest-skull-direction-5655572/
-
 .. rst-class:: text-and-picture
 
 Quem sou eu?
