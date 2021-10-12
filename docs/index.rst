@@ -18,7 +18,7 @@ Agenda
 * A documentação e o manifesto ágil
 * Análise e planejamento de solução
 * Documentando decisões
-* Disseminando em em equipes distribuídas
+* Disseminando em equipes distribuídas
 * Escalando times de engenharia via RFCs
 * Sphinx
 * Documentação em geral
